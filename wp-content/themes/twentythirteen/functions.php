@@ -529,3 +529,17 @@ function twentythirteen_customize_preview_js() {
 	wp_enqueue_script( 'twentythirteen-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'twentythirteen_customize_preview_js' );
+
+// Criado por bsantana.me //
+function create_post_type() {
+  register_post_type( 'Game',
+    array(
+      'labels' => array(
+        'name' => __( 'Games' ),
+        'singular_name' => __( 'Game' )
+      ),
+      'public' => true,
+    )
+  );
+}
+add_action( 'init', 'create_post_type' );
