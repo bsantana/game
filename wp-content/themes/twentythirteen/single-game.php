@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-sdfsdf
+			Single
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

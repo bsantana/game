@@ -539,6 +539,8 @@ function create_post_type() {
         'singular_name' => __( 'Game' )
       ),
       'public' => true,
+      'rewrite' => array('slug' => 'game'),
+      'has_archive' => true
     )
   );
 }
